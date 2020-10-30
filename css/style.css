@@ -1,1 +1,55 @@
-/* CSS */
+header {
+    background-color: black;
+    /* position: fixed; */
+    text-align: left;
+    height: 3.25rem;
+}
+
+.logo {
+    color: white;
+    /* display: inline-block; */
+
+}
+nav {
+    display: block;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+}
+nav > ul > li {
+    display: inline;
+    float: right;
+}
+#menu > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menu > ul > li > a:hover {
+    background-color: orange;
+}
+.active {
+    background-color: #4CAF50;
+  }
+
+/* GG tipp mobile first a képekhez */
+/* //mobilon */
+.col{
+  background: red;
+}
+/* // 600px felett */
+@media (min-width: 600px) {
+  .col{
+    background: green;
+  }
+} 

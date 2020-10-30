@@ -1,14 +1,18 @@
 header {
-    background-color: black;
-    /* position: fixed; */
+    background-color: #333;
     text-align: left;
-    height: 3.25rem;
 }
 
 .logo {
+    float: left;
     color: white;
     /* display: inline-block; */
-
+    font-size: 1rem;
+    font-weight: 800;
+    height: inherit;
+    line-height: inherit;
+    padding: 1rem 0rem;
+    text-decoration: none;
 }
 nav {
     display: block;

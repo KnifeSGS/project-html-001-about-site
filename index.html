@@ -9,14 +9,23 @@
 <body>
     <!-- Header: A header -ben szerepeljen balra igazítva az oldal szabadon választott címe. -->
     <header id="header">
-        <a href="/index.html" class="logo">Webfejlesztés gombokért</a>
-        <nav id="menu">
-            <ul>
-                <li><a class="active" href="/index.html">Home</a></li>
-                <li><a href="/works.html">Works</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
+        <nav id="menu" class="topbar">
+            <div>
+                <a href="/index.html" class="logo">Webfejlesztés gombokért</a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/works.html">Works</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -54,5 +63,7 @@
         <a href="#menu"><button>Vissza a menühöz</button></a>
     </footer>
     
+    <!-- Hambimenu -->
+    <script src="/js/script.js"></script>
 </body>
 </html>

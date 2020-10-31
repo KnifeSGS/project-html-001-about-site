@@ -9,7 +9,7 @@ body {
 
 .topbar {
   background-color: #333;
-  display: flex;
+  display: block;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -35,9 +35,11 @@ body {
 .navbar ul {
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 600px) {
   .navbar ul {
@@ -87,3 +89,35 @@ body {
     background: green;
   }
 } 
+
+.banner {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: block;
+}
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.inner {
+  width: 33%;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border: 3px solid green;
+  align-items: center;
+  justify-content: center;
+}
+
+.arti {
+  align-items: center;
+}

@@ -78,19 +78,6 @@ body {
   background-color: green;
 }
 
-
-/* GG tipp mobile first a képekhez */
-/* //mobilon */
-.col{
-  background: red;
-}
-/* // 600px felett */
-@media (min-width: 600px) {
-  .col{
-    background: green;
-  }
-} 
-
 #banner {
   display: flex;
   width: 100%;
@@ -214,21 +201,51 @@ body {
 }
 
 .gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  margin: auto;
+  display: block;
 }
-.item {
-  display: flex;
-  margin: auto;
-  padding: 1rem;
-  box-shadow: 0 5px 10px gray;
-  width: 80%;
+@media (min-width: 600px) {
+  .gallery {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+}
+.item1 {
+  max-width: 80%;
+}
+@media (min-width: 600px) {
+  .item1 {
+    max-width: 30%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+.item2 {
+  max-width: 80%;
+}
+@media (min-width: 600px) {
+  .item2 {
+    max-width: 30%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+.item3 {
+  max-width: 80%;
+}
+@media (min-width: 600px) {
+  .item3 {
+    max-width: 30%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .kep {
-  display: flex;
+  margin: 1rem;
+  box-shadow: 0 5px 10px gray;
   width: 100%;
-  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

@@ -7,26 +7,14 @@ body {
   padding: 0;
 }
 
-header {
+.topbar {
   background-color: #333;
-  text-align: left;
-}
-
-.logo {
-  float: left;
-  color: white;
-  font-size: 1rem;
-  font-weight: 800;
-  padding: 1rem 1rem;
-  text-decoration: none;
-}
-#menu {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 @media (min-width: 600px) {
-  #menu {
+  .topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,71 +23,58 @@ header {
   }
 }
 
+.logo {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
 .navbar ul {
-  display: none;
-  list-style: none;
+  display: flex;
   width: 100%;
-  
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
 }
 @media (min-width: 600px) {
   .navbar ul {
     display: flex;
-    list-style: none;
     margin: 0;
     padding: 0;
-    
+    flex-direction: row;
   }
 }
 
-
-.navbar.mobile {
-  display: flex;
+.navbar li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
 }
+
 .navbar li a {
   display: block;
   color: white;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-navbar li {
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
   padding: .5rem 1rem;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
 }
 @media (min-width: 600px) {
-  
+  .navbar li a {
+    padding: 1rem;
+  }
 }
+
 .navbar li a:hover {
   background-color: #777777;
 }
 .active {
-  background-color: darkgreen;
+  background-color: green;
 }
 
-.toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-@media (min-width: 600px) {
-  .toggle-button {
-    display: none;
-  }
-}
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  
-}
 
 /* GG tipp mobile first a képekhez */
 /* //mobilon */

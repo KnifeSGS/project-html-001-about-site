@@ -182,3 +182,33 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.bejegyzes {
+  display: block;
+}
+@media (min-width: 600px) {
+  .bejegyzes {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.miniimg {
+  max-width: 80%;
+}
+@media (min-width: 600px) {
+  .miniimg {
+    max-width: 25%;
+  }
+}
+
+.content {
+  max-width: 80%;
+  margin: auto;
+  padding: auto;
+}
+@media (min-width: 600px) {
+  .content {
+    max-width: 75%;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>About me</title>
 </head>
 <body>
     <!-- Header: A header -ben szerepeljen balra igazítva az oldal szabadon választott címe. -->
@@ -74,26 +74,25 @@
         </section>
 
         <section>
-            <form action="">
-
+            <form >
                 <fieldset>
                     <legend>Küldj nekem megbizást</legend>
-                <ul>
-                    <li>
-                        <label for="name">neved<em>*</em></label>
-                        <input id="name" type="text"/>
-                    </li>
-                    <li>
-                        <label for="email1">e-mail címed<em>*</em></label>
-                        <input id="email1" type="email"/>
-                    </li>
-                    <li>
-                        <label for="uzenet">üzeneted<em>*</em></label>
-                        <input id="uzenet" type="text"/>
-                    </li>
-                </ul>
-                <button class="btn">Elküld</button>
-            </fieldset>
+                    <ul>
+                        <li>
+                            <label for="name">neved<em>*</em></label>
+                            <input id="name" type="text" minlength="5" required/>
+                        </li>
+                        <li>
+                            <label for="email1">e-mail címed<em>*</em></label>
+                            <input id="email1" type="email" required/>
+                        </li>
+                        <li>
+                            <label for="uzenet">üzeneted<em>*</em></label>
+                            <input id="uzenet" type="text" minlength="20" required/>
+                        </li>
+                    </ul>
+                    <input type="submit"/>
+                </fieldset>
             </form>
         </section>
 

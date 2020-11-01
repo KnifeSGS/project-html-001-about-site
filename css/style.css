@@ -98,6 +98,7 @@ body {
 @media (min-width: 600px) {
   .container {
     display: flex;
+    flex: auto;
     align-items: center;
   }
 }
@@ -142,6 +143,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .btn {

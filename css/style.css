@@ -277,3 +277,12 @@ input[type="text"], input[type="email"] {
     font-family: courier;
     display: flex;
 }
+
+.profilepic {
+  display: block;
+  
+}
+.profilepic > img {
+  max-width: 30%;
+}
+
